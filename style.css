@@ -49,7 +49,7 @@ body{
     background-color: #512da8;
     color: #fff;
     font-size: 12px;
-    padding: 10px, 45px;
+    padding: 10px 45px;
     border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 600;
@@ -182,21 +182,29 @@ body{
     width: 50%;
     height: 100%;
     display: flex;
-    /* align-items: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0 30px;
     text-align: center;
     top: 0;
     transform: translateX(0);
-    transition: all 0.6s ease-in-out; */
+    transition: all 0.6s ease-in-out;
 }
 
 .toggle-left{
     transform: translateX(-200%);
 }
 
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
 .toggle-right{
     right: 0;
     transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
 }
